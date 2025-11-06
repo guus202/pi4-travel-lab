@@ -1,0 +1,13 @@
+- alias: Stop Plex bij hoog RAM alleen als geen stream
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.rpi_ram_usage
+    above: 90
+  condition:
+    condition: state
+    entity_id: sensor.plex_active_streams
+    state: '0'
+  action:
+    service: switch.turn_off
+    target:
+      entity_id: switch.plex
