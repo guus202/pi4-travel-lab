@@ -1,0 +1,4 @@
+# basisconfig, kan leeg beginnen
+homeassistant:
+  name: "Travel Lab"
+  unit_system: metric
