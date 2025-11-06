@@ -1,0 +1,36 @@
+switch:
+  - platform: command_line
+    switches:
+      plex:
+        command_on: "docker start plex"
+        command_off: "docker stop plex"
+      nextcloud:
+        command_on: "docker start nextcloud"
+        command_off: "docker stop nextcloud"
+      homeassistant:
+        command_on: "docker start homeassistant"
+        command_off: "docker stop homeassistant"
+      openwrt:
+        command_on: "docker start openwrt"
+        command_off: "docker stop openwrt"
+      pihole:
+        command_on: "docker start pihole"
+        command_off: "docker stop pihole"
+      wireguard:
+        command_on: "docker start wireguard"
+        command_off: "docker stop wireguard"
+      glances:
+        command_on: "docker start glances"
+        command_off: "docker stop glances"
+      uptime_kuma:
+        command_on: "docker start uptime-kuma"
+        command_off: "docker stop uptime-kuma"
+      heimdall:
+        command_on: "docker start heimdall"
+        command_off: "docker stop heimdall"
+      npm:
+        command_on: "docker start npm"
+        command_off: "docker stop npm"
+      pi:
+        command_on: "sudo reboot"
+        command_off: "sudo shutdown now"
